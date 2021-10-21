@@ -2,7 +2,7 @@
 layout: post
 title:  "Automatic snake gait generation using model predictive control"
 date:  2020-5-31 22:21:59 +00:00
-image: /images/jcdl2019.png
+image: snakempc.gif
 categories: research
 author: "Gagan Khandate"
 authors: "Emily Hannigan, Bing Song, <strong>Gagan Khandate</strong>, Maxmillian Haas-Heger, Ji Yin, Matei Ciocarlie"

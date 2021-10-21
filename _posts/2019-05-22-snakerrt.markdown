@@ -2,7 +2,7 @@
 layout: post
 title:  "SBP-Guided MPC to Overcome Local Minima in Trajectory Planning"
 date:  2019-5-22 22:21:59 +00:00
-image: /images/jcdl2019.png
+image: snakerrt.png
 categories: research
 author: "Gagan Khandate"
 authors: "Emily Hannigan, Bing Song, <strong>Gagan Khandate</strong>, Maxmillian Haas-Heger, Ji Yin, Matei Ciocarlie"
@@ -13,4 +13,4 @@ video: https://www.youtube.com/watch?v=gZSDV0lleCM
 # code: https://github.com/leonidk/venue_scores
 ---
 
-MPC with iLQG has been shown to be fast and effective for generating trajectories to reach a goal. However, when optimizing for non-linear dynamics, it runs the risk of falling into local minima. Unlike iLQG, Sampling Based Planning (SBP) methods such as Rapidly-exploring Random Trees (RRT) can be robust to local minima because they explore by taking random actions instead of following a gradient. However, for similar reasons, SBP often produces inefficient trajectories. We combine these two approaches; using an RRT-produced trajectory as a warm start for iLQG, we can overcome local minima while still producing an efficient trajectory
+ Non-linearity of robot dynamics can cause failure of trajectory optimization methods (ex. iLQG) due to local optima. On the other hand, Sampling Based Planning (SBP) methods such as Rapidly-exploring Random Trees (RRT) are inherently robust to presence of local optima but often generate in-efficient trajectories. We propose combining these two classes of methods to retain the strengths of each. We use RRT trajectory as initialization for iLQG and overcome local optima while producing an efficient trajectory.

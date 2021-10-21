@@ -1,8 +1,8 @@
 ---
 layout: post
 title:  "Safe RL for Islands & Bridges: A Topologically Isomorphoic Problem to In-hand Manipulation"
-date:  2021-10-15 22:21:59 +00:00
-image: /images/jcdl2019.png
+date:  2019-12-15 22:21:59 +00:00
+image: regular_maze.png
 categories: other
 author: "Gagan Khandate"
 authors: "Maximillian Haas-Heger, <strong>Gagan Khandate</strong>, Matei Ciocarlie"

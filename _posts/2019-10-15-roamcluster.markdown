@@ -2,7 +2,7 @@
 layout: post
 title:  "<strong>roamcluster</strong>: docker-based job scheduler"
 date:  2019-10-15 22:21:59 +00:00
-image: /images/jcdl2019.png
+image: roamcluster.png
 categories: other
 ---
 
