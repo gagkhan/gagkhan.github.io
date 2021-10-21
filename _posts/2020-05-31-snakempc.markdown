@@ -1,0 +1,15 @@
+---
+layout: post
+title:  "Automatic snake gait generation using model predictive control"
+date:  2020-5-31 22:21:59 +00:00
+image: /images/jcdl2019.png
+categories: research
+author: "Gagan Khandate"
+authors: "Emily Hannigan, Bing Song, <strong>Gagan Khandate</strong>, Maxmillian Haas-Heger, Ji Yin, Matei Ciocarlie"
+venue: "IEEE International Conference on Robotics and Automation (ICRA)"
+arxiv: https://arxiv.org/pdf/1909.11204.pdf
+video: https://www.youtube.com/watch?v=gZSDV0lleCM
+# slides: /pdfs/jcdl2019.pdf
+# code: https://github.com/leonidk/venue_scores
+---
+In this paper, we use Model Predictive Control (MPC) with iLQR to automatically generate effective locomotion gaits via trajectory optimization. An important advantage of our method is that it can be applied to generate gaits under different environment dynamics such as dry friction or viscous friction while also enabling obstacle avoidance.
