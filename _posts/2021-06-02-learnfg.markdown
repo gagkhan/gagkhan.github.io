@@ -1,15 +1,15 @@
 ---
 layout: post
 title:  "On Feasibility of Learning Finger-gaiting In-hand Manipulation using Intrinsic Sensing"
-date:  2021-10-15 22:21:59 +00:00
+date:  2022-5-24 22:21:59 +00:00
 image: learnfg.gif
 categories: research
 author: "Gagan Khandate"
 authors: "<strong>Gagan Khandate</strong>, Maximillian Haas-Heger, Matei Ciocarlie"
-venue: "pre-print"
+venue: "IEEE International Conference on Robotics and Automation (ICRA)"
 arxiv: https://arxiv.org/abs/2109.12720
 video: https://www.youtube.com/watch?v=Xtjs34E4zNs
 # slides: /pdfs/jcdl2019.pdf
 # code: https://github.com/leonidk/venue_scores
 ---
-In this work, we use model-free reinforcement learning (RL) to learn finger-gaiting only via precision grasps and demonstrate finger-gaiting for rotation about an axis purely using on-board proprioceptive and tactile feedback. To tackle the inherent instability of precision grasping, we propose the use of initial state distributions that enable effective exploration of the state space. 
+In this work, we use model-free reinforcement learning (RL) to learn finger-gaiting only via precision grasps and demonstrate finger-gaiting for rotation about an axis purely using on-board proprioceptive and tactile feedback. To tackle the inherent instability of precision grasping, we propose the use of initial state distributions that enable effective exploration of the state space.
