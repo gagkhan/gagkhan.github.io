@@ -27,13 +27,11 @@
               </h1>
               <p style="text-align: center; font-weight: 100; font-family: 'Courier New', Courier, monospace;"> gagank at cs dot columbia dot edu</p>
               <p>
-              I am a PhD student in <a href="https://www.cs.columbia.edu/"> Computer Science </a> at <a href="https://www.columbia.edu/s">Columbia University </a> advised by <a href="https://www.me.columbia.edu/faculty/matei-ciocarlie">Matei Ciocarlie</a> working on robot learning as a member of <a href="https://roam.me.columbia.edu/">Robotic Manipulation and Mobility Lab</a>.
-              Enabling complex motor skill acquisition through the combined use of models, data and domain knowledge is the focus of my research.
+              I am a PhD student in <a href="https://www.cs.columbia.edu/"> Computer Science </a> at <a href="https://www.columbia.edu/s">Columbia University </a> advised by <a href="https://www.me.columbia.edu/faculty/matei-ciocarlie">Matei Ciocarlie</a> working on robot learning as a member of <a href="https://roam.me.columbia.edu/">Robotic Manipulation and Mobility Lab</a>, working on robot learning and reinforcement learning.
+              <p>I believe that online learning methods leveraging simulation are critical for real world deployment and work on improving sample efficiency of online reinforcement learning particulary for robotics and manipulation tasks.</p>
+
               <p>
-                From 2015 to 2017, I worked as a Research Engineer at <a href="http://www.systemantics.com/">Systemantics</a> where I primarily developed controls, kinematics and motion-planning firmware for serial and parallel collaborative industrial manipulators. 
-              </p>
-              <p>I received my master's from Columbia University in Mechanical Engineering with a focus on Robotics and recieved my bachelor's from <a href="https://www.iitm.ac.in/">Indian Institute of Technology Madras</a> also in Mechanical Engineering with a minor in micro-electronics where I was advised by <a href="https://ed.iitm.ac.in/~sandipan/">Sandipan Bandyopadhay </a> and <a href="https://mech.iitm.ac.in/meiitm/personnal/dr-c-sujatha/">C. Sujata </a>  
-              </p>
+                Previously, I worked as a Research Engineer at <a href="http://www.systemantics.com/">Systemantics</a> where I primarily developed controls, kinematics and motion-planning firmware for serial and parallel collaborative industrial manipulators. I received my master's from Columbia University in Mechanical Engineering with a focus on Robotics and recieved my bachelor's from <a href="https://www.iitm.ac.in/">Indian Institute of Technology Madras</a> also in Mechanical Engineering with a minor in micro-electronics.</p>
 
               <p style="text-align:center">
                 <!-- <a target="_blank" href="https://mailhide.io/e/B8TyS"> Email</a> &nbsp;/&nbsp; -->
@@ -52,14 +50,14 @@
           <tr>
             <td style="padding:2.5%;width:100%;vertical-align:middle">
               <h2>News</h2>
-              <ul>
-                <li> <span style="color: crimson;">NEW!</span> [2022-05] Excited to be spending summer at Amazon Robotics AI, Boston.
-                <li> <span style="color: crimson;">NEW!</span>  [2022-02] <a href="https://arxiv.org/abs/2109.12720">Paper</a> on in-hand manipulation accepted to ICRA 2022 </li>
+              <ul style="display:flex; flex-direction: column; gap: 5px;">
+                <li> <span style="color: crimson;">NEW!</span> [2022-01] I will be interning at Meta Reality Labs for the upcoming summer!
+                <li> [2022-05] Excited to be spending summer at Amazon Robotics AI, Boston.
+                <li> [2022-02] <a href="https://arxiv.org/abs/2109.12720">Paper</a> on in-hand manipulation accepted to ICRA 2022 </li>
                 <li> [2021-05] Invited talk on using <a href="https://youtu.be/YVLlM_xPSHE?list=PL6s_djlC2RASDPERDG5A4DXlfdWrbkA9v&t=857">tactile sensing for in-hand manipulation </a> at ViTac Workshop in ICRA 2021 </li>
                 <li> [2021-03] Guest lecture on Model Predictive Control in our course on Robot Learning <a href="https://youtu.be/9hEKoT6rUug?t=1852"></a> </li>
                 <li> [2020-05] <a href="https://arxiv.org/abs/2109.12720">Paper</a> on snake locomotion accepted to ICRA 2020 </li>
                 <li> [2019-11] Lecture discussing a seminal paper on <a href="https://youtu.be/9hEKoT6rUug?t=1852">vision based grasping</a> in our course on robot learning. </li>
-                
               </ul>
             </td>
           </tr>
@@ -69,7 +67,7 @@
             <td style="padding:2.5%;width:100%;vertical-align:middle">
               <h2>Publications</h2>
               <p>
-               
+
               </p>
             </td>
           </tr>
@@ -83,10 +81,10 @@
               <img src="/images/{{post.image}}" alt="project image" style="width:auto; height:auto; max-width:100%;" />
             </td>
             <td style="padding:2.5%;width:75%;vertical-align:middle">
+              <div class="grow" style="padding: 10px;">
               <h3>{{post.title}}</h3>
               <br>
               {{post.authors}}
-
               <br>
               <em>{{post.venue}}</em>, {{ post.date | date: "%Y" }}
               <br>
@@ -105,9 +103,14 @@
               {% if post.slides %}
               <a href="{{post.slides}}">slides</a> /
               {% endif %}
+              {% if post.website %}
+              <a href="{{post.website}}">website</a> /
+              {% endif %}
               <p></p>
+              <br>
               {{ post.excerpt }}
             </td>
+          </div>
           </tr>
           {% endif %}
           {% endfor %}
@@ -116,16 +119,16 @@
         <br>
         <br>
         <br>
-        <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
+        <!-- <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
           <tr>
             <td style="padding:2.5%;width:100%;vertical-align:middle">
               <h2>Other Projects</h2>
-              <p> These include coursework, side projects and unpublished research work. 
+              <p> These include coursework, side projects and unpublished research work.
               </p>
             </td>
           </tr>
-        </table>
-        <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
+        </table> -->
+        <!-- <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
 
           {% for post in site.posts %}
           {% for cat in post.categories %}
@@ -137,7 +140,7 @@
             <td style="padding:2.5%;width:75%;vertical-align:middle">
               <h3>{{post.title}}</h3>
               <br>
-              <!-- <em>{{post.categories}} {{post.course}}</em> -->
+              <em>{{post.categories}} {{post.course}}</em>
               <br>
               {{ post.date | date: "%Y-%m-%d" }}
 
@@ -179,9 +182,9 @@
           {% endif %}
           {% endfor %}
           {% endfor %}
-        </table>
+        </table> -->
 
-        <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
+        <!-- <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
           <tr>
             <td style="padding:0px">
               <br>
@@ -190,7 +193,7 @@
               </p>
             </td>
           </tr>
-        </table>
+        </table> -->
       </td>
     </tr>
   </table>

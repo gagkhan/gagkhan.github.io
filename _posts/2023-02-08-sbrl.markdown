@@ -1,0 +1,33 @@
+---
+layout: post
+title:  "Sampling-based Exploration for Reinforcement Learning of Dexterous Manipulation"
+date:  2023-02-08 22:21:59 +00:00
+image: sbrl.gif
+categories: research
+author: "Gagan Khandate"
+authors: "<strong>Gagan Khandate*</strong>, Siqi Shang*, Eric Chang, Tristan Luca Saidi, Johnson Adams, Matei Ciocarlie"
+venue: "Submitted to Robotics: Science & Systems, RSS"
+arxiv: https://arxiv.org/abs/2303.03486
+website: https://sbrl.cs.columbia.edu
+# slides: /pdfs/jcdl2019.pdf
+# code: https://github.com/leonidk/venue_scores
+---
+In this paper, we present a novel method for
+achieving dexterous manipulation of complex objects, while
+simultaneously securing the object without the use of passive
+support surfaces. We posit that a key difficulty for training such
+policies in a Reinforcement Learning framework is the difficulty
+of exploring the problem state space, as the accessible regions
+of this space form a complex structure along manifolds of a
+high-dimensional space. To address this challenge, we use two
+versions of the non-holonomic Rapidly-Exploring Random Trees
+algorithm; one version is more general, but requires explicit
+use of the environment’s transition function, while the second
+version uses manipulation-specific kinematic constraints to attain
+better sample efficiency. In both cases, we use states found via
+sampling-based exploration to generate reset distributions that
+enable training control policies under full dynamic constraints
+via model-free Reinforcement Learning. We show that these
+policies are effective at manipulation problems of higher difficulty
+than previously shown, and also transfer effectively to real
+robots.

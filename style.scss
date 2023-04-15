@@ -47,7 +47,7 @@ h2 {
   font-weight: normal;
   padding: 0px;
   margin: 0px;
-  display:inline; 
+  display:inline;
 }
 
 h3 {
@@ -57,7 +57,7 @@ h3 {
   font-display: auto;
   padding: 0px;
   margin: 0px;
-  display:inline; 
+  display:inline;
 }
 
 h1 {
@@ -97,6 +97,18 @@ h1 {
 
 span.highlight {
   background-color: #ffffd0;
+}
+
+.grow{
+  height: 100px;
+  overflow: hidden;
+  transition: height 0.5s;
+  -webkit-transition: height 0.5s;
+}
+
+.grow:hover{
+  height: 375px;
+  background-color: aliceblue;
 }
 
 // Settled on moving the import of syntax highlighting to the bottom of the CSS

@@ -1,0 +1,15 @@
+---
+layout: post
+title:  "Value Guided Exploration with Sub-optimal Controllers for Learning Dexterous Manipulation"
+date:  2023-03-02 22:21:59 +00:00
+image: vge.gif
+categories: research
+author: "Gagan Khandate"
+authors: "<strong>Gagan Khandate*</strong>, Cameron Mehlman*, Xingsheng Wei*, Matei Ciocarlie"
+venue: "Submitted to International Conference on Intelligent Robots and Systems"
+arxiv: https://arxiv.org/abs/2303.03533
+website: https://roamlab.github.io/vge
+# slides: /pdfs/jcdl2019.pdf
+# code: https://github.com/leonidk/venue_scores
+---
+Recently, reinforcement learning has allowed dexterous manipulation skills with increasing complexity. Nonetheless, learning these skills in simulation still exhibits poor sample-efficiency which stems from the fact these skills are learned from scratch without the benefit of any domain expertise. In this work, we aim to improve the sample-efficiency of learning dexterous in-hand manipulation skills using sub-optimal controllers available via domain knowledge. Our framework optimally queries the sub-optimal controllers and guides exploration toward state-space relevant to the task thereby demonstrating improved sample complexity. We show that our framework allows learning from highly sub-optimal controllers and we are the first to demonstrate learning hard-to-explore finger-gaiting in-hand manipulation skills without the use of an exploratory reset distribution.
