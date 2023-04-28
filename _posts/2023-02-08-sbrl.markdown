@@ -3,7 +3,7 @@ layout: post
 title:  "Sampling-based Exploration for Reinforcement Learning of Dexterous Manipulation"
 date:  2023-02-08 22:21:59 +00:00
 image: sbrl.gif
-categories: research-preprint
+categories: research
 author: "Gagan Khandate"
 authors: "<strong>Gagan Khandate*</strong>, Siqi Shang*, Eric Chang, Tristan Luca Saidi, Johnson Adams, Matei Ciocarlie"
 venue: "Submitted to Robotics: Science & Systems, RSS"

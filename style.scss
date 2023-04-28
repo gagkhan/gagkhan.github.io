@@ -107,7 +107,20 @@ span.highlight {
 }
 
 .grow:hover{
-  height: 375px;
+  height: auto;
+  background-color: aliceblue;
+}
+
+
+.grownews{
+  height: 150px;
+  overflow: hidden;
+  transition: height 0.5s;
+  -webkit-transition: height 0.5s;
+}
+
+.grownews:hover{
+  height: auto;
   background-color: aliceblue;
 }
 
