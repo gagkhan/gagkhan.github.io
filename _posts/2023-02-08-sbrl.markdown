@@ -6,7 +6,7 @@ image: sbrl.gif
 categories: research
 author: "Gagan Khandate"
 authors: "<strong>Gagan Khandate*</strong>, Siqi Shang*, Eric Chang, Tristan Luca Saidi, Johnson Adams, Matei Ciocarlie"
-venue: "Submitted to Robotics: Science & Systems, RSS"
+venue: "Robotics: Science & Systems, RSS"
 arxiv: https://arxiv.org/abs/2303.03486
 website: https://sbrl.cs.columbia.edu
 # slides: /pdfs/jcdl2019.pdf
