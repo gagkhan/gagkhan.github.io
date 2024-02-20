@@ -3,10 +3,10 @@ layout: post
 title:  "Value Guided Exploration with Sub-optimal Controllers for Learning Dexterous Manipulation"
 date:  2023-03-02 22:21:59 +00:00
 image: vge.gif
-categories: research-preprint
+categories: research
 author: "Gagan Khandate"
 authors: "<strong>Gagan Khandate*</strong>, Cameron Mehlman*, Xingsheng Wei*, Matei Ciocarlie"
-venue: "Submitted to International Conference on Intelligent Robots and Systems"
+venue: "International Conference on Intelligent Robots and Systems 2024"
 arxiv: https://arxiv.org/abs/2303.03533
 website: https://roamlab.github.io/vge
 # slides: /pdfs/jcdl2019.pdf
