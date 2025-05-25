@@ -3,10 +3,10 @@ layout: post
 title:  "RxR: Rapid eXploration for Reinforcement Learning via Sampling-based Reset Distributions and Imitation Pre-training"
 date:  2024-01-15 22:21:59 +00:00
 image: rxr.gif
-categories: research-preprint
+categories: research
 author: "Gagan Khandate"
 authors: "<strong>Gagan Khandate*</strong>, Tristan Luca Saidi*, Siqi Shang*, Eric Chang, Johnson Adams, Matei Ciocarlie"
-venue: "Submitted to Autonomous Robots - RSS 202 Special Issue"
+venue: "Autonomous Robots - RSS 2023 Special Issue"
 arxiv: https://arxiv.org/pdf/2401.15484
 website: https://sbrl.cs.columbia.edu
 # slides: /pdfs/jcdl2019.pdf

@@ -1,0 +1,16 @@
+---
+layout: post
+title:  "Train Robots in a JIF: Joint Inverse and Forward Dynamics with Human and Robot Demonstrations"
+date:  2025-01-30 22:21:59 +00:00
+image: jif.gif
+categories: research-preprint
+author: "Gagan Khandate"
+authors: "<strong>Gagan Khandate*</strong>, Boxuan Wang*, Sarah Park*, Weizhe Ni, Joaquin Palacios, Kathyrn Lampo, Philippe Wu, Rosh Ho, Eric Chang, Matei Ciocarlie
+"
+venue: "Submitted to RSS 2025"
+arxiv: https://arxiv.org/abs/2503.12297
+website: 
+# slides: /pdfs/jcdl2019.pdf
+# code: https://github.com/leonidk/venue_scores
+---
+Pre-training on large datasets of robot demonstrations is a powerful technique for learning diverse manipulation skills but is often limited by the high cost and complexity of collecting robot-centric data, especially for tasks requiring tactile feedback. This work addresses these challenges by introducing a novel method for pre-training with multi-modal human demonstrations. Our approach jointly learns inverse and forward dynamics to extract latent state representations, towards learning manipulation specific representations. This enables efficient fine-tuning with only a small number of robot demonstrations, significantly improving data efficiency. Furthermore, our method allows for the use of multi-modal data, such as combination of vision and touch for manipulation. By leveraging latent dynamics modeling and tactile sensing, this approach paves the way for scalable robot manipulation learning based on human demonstrations.

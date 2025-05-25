@@ -3,7 +3,7 @@ layout: post
 title:  "SBP-Guided MPC to Overcome Local Minima in Trajectory Planning"
 date:  2019-5-22 22:21:59 +00:00
 image: snakerrt.png
-categories: research
+categories: other
 author: "Gagan Khandate"
 authors: "Emily Hannigan, Bing Song, <strong>Gagan Khandate</strong>, Maxmillian Haas-Heger, Ji Yin, Matei Ciocarlie"
 venue: "Optimal Planning and Control: Fusing Offline and Online Algorithms Workshop, ICRA"
