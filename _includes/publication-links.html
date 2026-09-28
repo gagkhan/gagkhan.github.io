@@ -1,0 +1,12 @@
+<div class="link-badges" aria-label="Publication resources">
+  {% assign resource_keys = 'arxiv,paper,video,code,poster,slides,website' | split: ',' %}
+  {% assign resource_labels = 'arXiv,Paper,Video,Code,Poster,Slides,Project page' | split: ',' %}
+  {% for key in resource_keys %}
+    {% if include.post[key] %}
+      {% assign resource_url = include.post[key] %}
+      {% assign first_character = resource_url | slice: 0 %}
+      {% if first_character == '/' %}{% assign resource_url = resource_url | relative_url %}{% endif %}
+      <a class="badge" href="{{ resource_url | escape }}">{{ resource_labels[forloop.index0] }}</a>
+    {% endif %}
+  {% endfor %}
+</div>

@@ -1,0 +1,60 @@
+---
+layout: default
+---
+<header class="profile">
+  <img class="portrait" src="{{ site.avatar | relative_url }}" alt="Gagan Khandate" width="400" height="400">
+  <div class="biography">
+    <h1>{{ site.name }}</h1>
+    <p class="email">Email: {{ site.footer-links.email }}</p>
+    <nav class="profile-links" aria-label="Profile links">
+      <a href="https://scholar.google.com/citations?user=0MkmRKUAAAAJ&amp;hl=en&amp;oi=ao">Google Scholar</a>
+      <a href="https://github.com/gagkhan">GitHub</a>
+      <a href="https://www.linkedin.com/in/gagankhandate/">LinkedIn</a>
+    </nav>
+    <p>Hi, I'm Gagan!</p>
+    <p>I'm a Robotics and ML researcher. I'm currently a <strong>Founding Research Scientist</strong> at <strong>Dexmate</strong>, where I work on world models and foundation models for dexterous manipulation, with a focus on learning from large-scale human and robot data. Previously, I was a <strong>Staff Research Scientist</strong> at <strong>Boston Dynamics</strong>, where I worked on dexterous manipulation for the Atlas humanoid, including fine-tuning pre-trained policies with offline RL, building on my research in reinforcement learning, tactile sensing, and sim-to-real transfer.</p>
+    <p>I earned my Ph.D. in Computer Science from <strong>Columbia University</strong>, where I was advised by <strong>Matei Ciocarlie</strong>. My research focused on multi-fingered dexterous manipulation, developing reinforcement learning methods that combine structured exploration, sampling-based planning, GPU-parallelized simulation, and tactile sensing to learn complex manipulation skills and transfer them to real robots. During my Ph.D., I also worked with Amazon Robotics AI and Meta Reality Labs (CTRL Labs).</p>
+    <p>Today, I'm particularly interested in learning dexterous behavior from human experience. I believe human videos and demonstrations contain rich information that can be distilled through predictive representation learning and world models into reusable priors for embodied learning. Ultimately, I want to build scalable systems that combine human experience, simulation, and real-world interaction to enable robots to learn and adapt complex skills in the real world.</p>
+    <p>I enjoy discussing research ideas, learning from others, and scheming about what's next in robotics and intelligent systems. If you're working on related problems&mdash;or just like thinking about robots that can actually use their hands&mdash;feel free to reach out.</p>
+  </div>
+</header>
+
+<section class="news" aria-labelledby="news-heading">
+  <h2 id="news-heading">Recent News</h2>
+  <ul>
+      <li>[2024-1] Our work on Value Guided Exploration has been accepted at ICRA 2024 </li>
+      <li>[2023-10] Our robot hand demonstrating dexterity with tactile sensing selected to <a href="https://time.com/collection/best-inventions-2023/6326934/columbia-university-robotic-hand/">TIME Magazine - Best Inventions of 2023</a> list.</li>
+      <li>[2023-04] Our work on dexterous manipulation with tactile sensing featured on Columbia Engineering News. <a href="https://www.engineering.columbia.edu/news/highly-dexterous-robot-hand-can-operate-in-the-dark"> See article </a>.</li>
+      <li>[2023-04] Excited to share that our work on sampling-based exploration for learning dexterous manipulation skills is accepted to RSS 2023.</li>
+  </ul>
+  <details class="older-news">
+    <summary>Older news</summary>
+    <ul>
+        <li>[2023-01] I will be interning at Meta Reality Labs for the upcoming summer.</li>
+        <li>[2022-05] Excited to be spending summer at Amazon Robotics AI, Boston.</li>
+        <li>[2022-02] <a href="https://arxiv.org/abs/2109.12720">Paper</a> on in-hand manipulation accepted to ICRA 2022 </li>
+        <li>[2021-05] Invited talk on using <a href="https://youtu.be/YVLlM_xPSHE?list=PL6s_djlC2RASDPERDG5A4DXlfdWrbkA9v&t=857">tactile sensing for in-hand manipulation </a> at ViTac Workshop in ICRA 2021 </li>
+        <li>[2021-03] Guest lecture on Model Predictive Control in our course on Robot Learning <a href="https://youtu.be/9hEKoT6rUug?t=1852">Watch lecture</a> </li>
+        <li>[2020-05] <a href="https://arxiv.org/abs/2109.12720">Paper</a> on snake locomotion accepted to ICRA 2020 </li>
+        <li>[2019-11] Lecture discussing a seminal paper on <a href="https://youtu.be/9hEKoT6rUug?t=1852">vision based grasping</a> in our course on robot learning. </li>
+    </ul>
+  </details>
+</section>
+
+{% assign preprints = site.posts | where_exp: 'post', "post.categories contains 'research-preprint'" %}
+{% if preprints.size > 0 %}
+<section class="papers" aria-labelledby="preprints-heading">
+  <h2 id="preprints-heading">Pre-prints</h2>
+  {% for post in preprints %}
+    {% include publication.html post=post %}
+  {% endfor %}
+</section>
+{% endif %}
+
+{% assign publications = site.posts | where_exp: 'post', "post.categories contains 'research'" %}
+<section class="papers" aria-labelledby="publications-heading">
+  <h2 id="publications-heading">Publications</h2>
+  {% for post in publications %}
+    {% include publication.html post=post %}
+  {% endfor %}
+</section>

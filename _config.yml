@@ -6,7 +6,7 @@
 name: Gagan Khandate
 
 # Short bio or description (displayed in the header)
-# description: the profile of an engineer, researcher and software developer
+description: Robotics and machine learning researcher working on world models and dexterous manipulation.
 
 # URL of your avatar or profile pic (you could use your GitHub profile pic)
 avatar: images/gagan_profile.jpeg
@@ -55,7 +55,7 @@ url: "https://gagkhan.github.io" # the base hostname & protocol for your site
 #
 
 #permalink: /:title/
-permalink: /
+permalink: /publications/:title/
 
 
 # The release of Jekyll Now that you're using
@@ -91,3 +91,5 @@ exclude:
   - todo.txt
   - _temp/index.html
   - _temp/
+  - Dockerfile
+  - serve.sh

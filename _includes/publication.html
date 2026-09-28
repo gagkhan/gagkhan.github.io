@@ -1,0 +1,14 @@
+{% assign publication = include.post %}
+<article class="publication">
+  <img class="publication-image" src="{{ publication.image | prepend: '/images/' | relative_url }}" alt="{{ publication.title | strip_html | escape }} — project demonstration" loading="lazy">
+  <div class="publication-info">
+    <h3>{{ publication.title }}</h3>
+    <div class="authors">{{ publication.authors }}</div>
+    <p class="venue"><em>{{ publication.venue }}</em>, {{ publication.date | date: '%Y' }}</p>
+    {% include publication-links.html post=publication %}
+    <details class="abstract">
+      <summary>Abstract</summary>
+      <div>{{ publication.excerpt }}</div>
+    </details>
+  </div>
+</article>
