@@ -93,3 +93,13 @@ exclude:
   - _temp/
   - Dockerfile
   - serve.sh
+
+# Blog posts live separately from research entries but use standard Jekyll posts.
+defaults:
+  - scope:
+      path: "_posts/blog"
+      type: posts
+    values:
+      layout: blog-post
+      categories: [blog]
+      permalink: /blog/:title/

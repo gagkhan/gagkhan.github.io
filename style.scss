@@ -90,3 +90,37 @@ summary:hover { color: #b9ddfa; }
   .link-badges .badge { min-height: 38px; padding: 6px 12px; }
   summary { padding: 5px 0; }
 }
+
+.blog-page { max-width: 760px; margin: 48px auto 64px; overflow-wrap: anywhere; }
+.blog-nav { display: flex; flex-wrap: wrap; gap: 24px; margin-bottom: 40px; }
+.blog-header { margin-bottom: 36px; }
+.blog-header h1 { font-size: clamp(28px, 4vw, 40px); line-height: 1.2; }
+.post-date { display: block; color: #abb2bc; font-size: 14px; margin-bottom: 10px; }
+.blog-description, .blog-empty { color: #b9bec6; }
+.blog-description { margin-top: 18px; font-size: 18px; }
+.blog-list { list-style: none; padding: 0; margin: 0; }
+.blog-list > li { padding: 28px 0; border-top: 1px solid #454b54; }
+.blog-list h2 { margin-bottom: 12px; font-size: 24px; }
+.blog-list p { margin-bottom: 0; color: #b9bec6; }
+.prose { font-size: 18px; line-height: 1.75; }
+.prose h2, .prose h3, .prose h4 { margin: 32px 0 16px; }
+.prose h2 { font-size: 28px; }
+.prose h3 { font-size: 22px; }
+.prose p, .prose ul, .prose ol { margin-bottom: 22px; }
+.prose a { text-decoration: underline; text-underline-offset: 3px; }
+.prose blockquote { margin: 24px 0; padding: 4px 20px; border-left: 3px solid #8ac5f4; color: #b9bec6; }
+.prose blockquote p:last-child { margin-bottom: 0; }
+.prose code { font-family: ui-monospace, monospace; font-size: .85em; background: #2d3239; border-radius: 4px; padding: 2px 5px; }
+.prose pre { padding: 18px; background: #2d3239; border: 1px solid #454b54; border-radius: 8px; overflow-x: auto; line-height: 1.6; }
+.prose pre code { padding: 0; white-space: pre; overflow-wrap: normal; }
+.prose img { height: auto; border-radius: 8px; margin: 24px auto; }
+.prose table { display: block; max-width: 100%; overflow-x: auto; border-collapse: collapse; margin: 24px 0; }
+.prose th, .prose td { padding: 10px 14px; border: 1px solid #59616c; text-align: left; }
+.prose hr { border: 0; border-top: 1px solid #454b54; margin: 32px 0; }
+.blog-post-footer { margin-top: 40px; padding-top: 24px; border-top: 1px solid #454b54; }
+
+@media (max-width: 767px) {
+  .blog-page { margin-top: 32px; }
+  .blog-nav { margin-bottom: 32px; }
+  .prose { font-size: 17px; }
+}

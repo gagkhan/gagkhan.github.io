@@ -1,0 +1,16 @@
+---
+layout: default
+---
+<article class="blog-page blog-post">
+  <nav class="blog-nav" aria-label="Site navigation">
+    <a href="{{ '/blog/' | relative_url }}">&larr; All posts</a>
+    <a href="{{ '/' | relative_url }}">Home</a>
+  </nav>
+  <header class="blog-header">
+    <p class="post-date"><time datetime="{{ page.date | date_to_xmlschema }}">{{ page.date | date: '%B %-d, %Y' }}</time> &middot; {{ site.name }}</p>
+    <h1>{{ page.title | escape }}</h1>
+    {% if page.description %}<p class="blog-description">{{ page.description | escape }}</p>{% endif %}
+  </header>
+  <div class="prose">{{ content }}</div>
+  <footer class="blog-post-footer"><a href="{{ '/blog/' | relative_url }}">&larr; All posts</a></footer>
+</article>

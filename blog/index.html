@@ -1,0 +1,30 @@
+---
+layout: default
+title: Blog
+description: Writing by Gagan Khandate.
+permalink: /blog/
+---
+<div class="blog-page">
+  <nav class="blog-nav" aria-label="Site navigation">
+    <a href="{{ '/' | relative_url }}">&larr; {{ site.name }}</a>
+  </nav>
+  <header class="blog-header">
+    <h1>Blog</h1>
+  </header>
+  {% assign blog_posts = site.posts | where_exp: 'post', "post.categories contains 'blog'" %}
+  {% if blog_posts.size > 0 %}
+    <ol class="blog-list">
+      {% for post in blog_posts %}
+      <li>
+        <article>
+          <time class="post-date" datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date: '%B %-d, %Y' }}</time>
+          <h2><a href="{{ post.url | relative_url }}">{{ post.title | escape }}</a></h2>
+          <p>{{ post.description | default: post.excerpt | strip_html | truncatewords: 45 }}</p>
+        </article>
+      </li>
+      {% endfor %}
+    </ol>
+  {% else %}
+    <p class="blog-empty">No posts yet. Check back soon.</p>
+  {% endif %}
+</div>
