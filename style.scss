@@ -1,130 +1,92 @@
 ---
 ---
 
-//
-// IMPORTS
-//
+:root { color-scheme: dark; }
 
-//@import "reset";
-//@import "variables";
-// Syntax highlighting @import is at the bottom of this file
+* { box-sizing: border-box; }
 
-/**************/
-/* BASE RULES */
-/**************/
-a {
-  color: #1772d0;
-  text-decoration: none;
+body {
+  margin: 0;
+  background: #242629;
+  color: #e6e7e9;
+  font: 16px/1.5 Arial, Helvetica, sans-serif;
+  -webkit-text-size-adjust: 100%;
 }
 
-a:focus,
-a:hover {
-  color: #f09228;
-  text-decoration: none;
+a { color: #8ac5f4; text-decoration: none; }
+a:hover { color: #b9ddfa; text-decoration: underline; }
+a:focus-visible, summary:focus-visible { outline: 2px solid #8ac5f4; outline-offset: 4px; }
+::selection { background: #34536f; }
+p { margin: 0 0 14px; }
+img { display: block; max-width: 100%; }
+h1, h2, h3 { line-height: 1.25; }
+h1 { margin: 0 0 8px; font-size: 30px; font-weight: 500; }
+h2 { margin: 0 0 20px; font-size: 25px; font-weight: 500; }
+h3 { margin: 0 0 6px; font-size: 18px; font-weight: 600; }
+
+.container { width: calc(100% - 48px); max-width: 1100px; margin: 0 auto; }
+.profile {
+  display: grid;
+  grid-template-columns: 240px minmax(0, 1fr);
+  align-items: center;
+  gap: 44px;
+  padding: 64px 0 36px;
 }
-
-body,
-td,
-th,
-tr,
-p,
-a {
-  font-family: 'Lato', Verdana, Helvetica, sans-serif;
-  font-size: 16px;
-  font-display: auto;
+.portrait { width: 100%; height: auto; border-radius: 20px; }
+.email { margin-bottom: 2px; }
+.profile-links { display: flex; flex-wrap: wrap; gap: 6px 16px; margin-bottom: 18px; }
+.biography p:last-child { margin-bottom: 0; }
+section { margin: 0 0 40px; }
+.news ul { padding-left: 24px; margin: 0; }
+.news li { margin-bottom: 6px; }
+summary { color: #8ac5f4; cursor: pointer; width: fit-content; }
+summary:hover { color: #b9ddfa; }
+.older-news { margin-top: 10px; }
+.older-news[open] summary { margin-bottom: 10px; }
+.publication {
+  display: grid;
+  grid-template-columns: 240px minmax(0, 1fr);
+  gap: 32px;
+  align-items: center;
+  margin-bottom: 32px;
 }
-
-strong {
-  font-family: 'Lato', Verdana, Helvetica, sans-serif;
-  font-size: 16px;
-  font-display: auto;
+.publication-image { width: 100%; height: auto; max-height: 210px; object-fit: contain; border-radius: 10px; }
+.authors { color: #b9bec6; }
+.authors strong { color: #f1f3f5; }
+.venue { margin: 4px 0 8px; }
+.link-badges { display: flex; flex-wrap: wrap; gap: 6px; margin: 8px 0; }
+.link-badges .badge {
+  display: inline-flex;
+  align-items: center;
+  min-height: 30px;
+  padding: 3px 9px;
+  border: 1px solid #59616c;
+  border-radius: 4px;
+  background: #2d3239;
+  color: #e6e7e9;
+  font-size: 14px;
+  line-height: 1.3;
 }
+.link-badges .badge:hover { background: #383e46; border-color: #8ac5f4; text-decoration: none; }
+.abstract { margin-top: 6px; }
+.abstract > div { padding-top: 10px; }
+.abstract p:last-child { margin-bottom: 0; }
+.publication-info, .biography, .post { overflow-wrap: anywhere; }
+.site-footer { padding: 8px 0 32px; color: #abb2bc; font-size: 13px; text-align: center; }
+.post { max-width: 850px; margin: 48px auto; }
+.post h1 { margin-top: 24px; }
+.post .link-badges { margin-bottom: 24px; }
+.skip-link { position: absolute; top: -80px; left: 16px; padding: 10px 16px; background: #242629; z-index: 1; }
+.skip-link:focus { top: 8px; }
 
-h2 {
-  font-family: 'Lato', Verdana, Helvetica, sans-serif;
-  font-size: 22px;
-  font-display: auto;
-  font-weight: normal;
-  padding: 0px;
-  margin: 0px;
-  display:inline;
+@media (max-width: 767px) {
+  .container { width: calc(100% - 36px); }
+  .profile { grid-template-columns: 1fr; gap: 24px; padding-top: 32px; }
+  .portrait { width: 180px; margin: 0 auto; }
+  h1 { font-size: 28px; }
+  h2 { font-size: 24px; }
+  .publication { grid-template-columns: 1fr; gap: 16px; margin-bottom: 36px; }
+  .publication-image { width: 100%; max-width: 320px; max-height: 230px; margin: 0 auto; }
+  .link-badges .badge { min-height: 38px; padding: 6px 12px; }
+  summary { padding: 5px 0; }
 }
-
-h3 {
-  font-family: 'Lato', Verdana, Helvetica, sans-serif;
-  font-size: 16px;
-  font-weight: 700;
-  font-display: auto;
-  padding: 0px;
-  margin: 0px;
-  display:inline;
-}
-
-h1 {
-  font-family: 'Lato', Verdana, Helvetica, sans-serif;
-  font-size: 32px;
-  font-weight: normal;
-  font-display: auto;
-  text-align: center;
-  padding: 0px;
-  margin-block-start: 14px;
-  margin-block-end: 14px;
-  margin-left: 0px;
-  margin-right: 0px;
-
-}
-
-.one {
-  width: 160px;
-  height: 160px;
-  position: relative;
-}
-
-.two {
-  width: 160px;
-  height: 160px;
-  position: absolute;
-  transition: opacity .2s ease-in-out;
-  -moz-transition: opacity .2s ease-in-out;
-  -webkit-transition: opacity .2s ease-in-out;
-}
-
-.fade {
-  transition: opacity .2s ease-in-out;
-  -moz-transition: opacity .2s ease-in-out;
-  -webkit-transition: opacity .2s ease-in-out;
-}
-
-span.highlight {
-  background-color: #ffffd0;
-}
-
-.grow{
-  height: 100px;
-  overflow: hidden;
-  transition: height 0.5s;
-  -webkit-transition: height 0.5s;
-}
-
-.grow:hover{
-  height: auto;
-  background-color: aliceblue;
-}
-
-
-.grownews{
-  height: 150px;
-  overflow: hidden;
-  transition: height 0.5s;
-  -webkit-transition: height 0.5s;
-}
-
-.grownews:hover{
-  height: auto;
-  background-color: aliceblue;
-}
-
-// Settled on moving the import of syntax highlighting to the bottom of the CSS
-// ... Otherwise it really bloats up the top of the CSS file and makes it difficult to find the start
-//@import "highlights";
-//@import "svg-icons";

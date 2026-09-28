@@ -1,15 +1,34 @@
-# updated website
+# Gagan Khandate's website
 
-This repo is built on a fork of **Jekyll Now** from [this repository](https://github.com/barryclark/jekyll-now). **Jekyll** is a static site generator that's perfect for GitHub hosted blogs ([Jekyll Repository](https://github.com/jekyll/jekyll))
+A Jekyll academic homepage for GitHub Pages. The responsive layout is inspired by
+[Haozhi Qi's website](https://github.com/HaozhiQi/haozhiqi.github.io), with roots in
+[Jon Barron's website](https://jonbarron.info/) and Jekyll Now.
 
-The website design is just a modification of [Jon Barron's website](https://jonbarron.info/) and is converted for my own use, re-purposing my old markdown posts. **Feel free to use template for your own purposes**, but please respect copyright for all the images/content in my `images`, `pdfs`, `_posts` folders. 
+## Local preview
 
+Run `./serve.sh`, then open http://localhost:4000. Docker builds an image with the
+GitHub Pages gems on the first run.
 
+To build without starting the server:
 
-## issues
-* In general, jekyll will try to build a full page for every post. I skip that by forcing `permalink: /`. This creates multiple entries in sitemap.xml for index.html but is otherwise fine. 
-* If you want multiple paragraphs, consider using `excerpt_separator: <!--more-->` in `_config.yml`, for my own use I didn't need this. 
-* My own posts have lots of extra stuff left over from my old jekyll design ("author", long descriptions, etc.), feel free to ignore them
-* I use thumbnails, so I can upload arbitrary sized images but then only display small ones. The `_make_thumbnails.sh` script generates them and the html template looks in `tn/` for all images. 
-* I have three categories of post with slightly differerent formatting, so changing sizing requires edits in multiple paces. 
-* If you use this, I'd appreciate a link back either to this repo or my personal website so others can find this too. 
+```sh
+docker build -t gagkhan-site .
+docker run --rm -v "$PWD:/site" gagkhan-site bundle exec jekyll build
+```
+
+## Editing content
+
+- `index.html`: biography, profile links, and news. Older news uses a native
+  disclosure control that works without JavaScript.
+- `_posts/`: publication metadata and abstracts. Use `research-preprint` or
+  `research` as the category to show a post in the corresponding homepage section.
+- `images/`: portrait and publication media.
+- `_includes/publication.html`: shared publication layout and expandable abstract.
+- `_includes/publication-links.html`: resource buttons, shown only when a URL exists.
+- `style.scss`: desktop and mobile styling.
+- `_config.yml`: site identity and Jekyll settings.
+
+The homepage has its own `index.html`; individual posts are generated at
+`/publications/:title/` so posts do not overwrite the homepage during builds.
+The original biography, news, publication metadata, and media are retained.
+Please respect the copyright of the images and research content.
