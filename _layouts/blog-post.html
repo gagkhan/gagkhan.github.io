@@ -12,5 +12,13 @@ layout: default
     {% if page.description %}<p class="blog-description">{{ page.description | escape }}</p>{% endif %}
   </header>
   <div class="prose">{{ content }}</div>
-  <footer class="blog-post-footer"><a href="{{ '/blog/' | relative_url }}">&larr; All posts</a></footer>
+  <footer class="blog-post-footer">
+    {% assign share_url = page.url | absolute_url | url_encode %}
+    {% assign share_title = page.title | strip_html | url_encode %}
+    <nav class="post-share link-badges" aria-label="Share this post">
+      <a class="badge" href="https://www.linkedin.com/sharing/share-offsite/?url={{ share_url }}" target="_blank" rel="noopener noreferrer" aria-label="Share on LinkedIn (opens in a new tab)">Share on LinkedIn</a>
+      <a class="badge" href="https://twitter.com/intent/tweet?url={{ share_url }}&amp;text={{ share_title }}" target="_blank" rel="noopener noreferrer" aria-label="Share on Twitter / X (opens in a new tab)">Share on Twitter / X</a>
+    </nav>
+    <a href="{{ '/blog/' | relative_url }}">&larr; All posts</a>
+  </footer>
 </article>
