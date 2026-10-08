@@ -32,3 +32,22 @@ The homepage has its own `index.html`; individual posts are generated at
 `/publications/:title/` so posts do not overwrite the homepage during builds.
 The original biography, news, publication metadata, and media are retained.
 Please respect the copyright of the images and research content.
+
+## Blog
+
+The blog lives at `/blog/`, linked from the homepage. It lists posts in reverse
+chronological order and stays separate from research publications.
+
+To publish a post:
+
+1. Create `_posts/blog/` if it does not exist.
+2. Copy `_drafts/first-post.md` to `_posts/blog/YYYY-MM-DD-your-post-slug.md`, using
+   the publication date and desired URL slug.
+3. Replace the title, description, and body. Keep the `blog` category and
+   `blog-post` layout. The post URL will be `/blog/your-post-slug/`.
+4. Preview with `./serve.sh`, then commit and deploy when ready.
+
+Files in `_drafts/` are excluded from normal builds. To preview drafts locally,
+run `./serve.sh bundle exec jekyll serve --host 0.0.0.0 --drafts --force_polling`.
+Future-dated posts are also excluded until their date; the site must rebuild
+on or after that date for them to appear.
