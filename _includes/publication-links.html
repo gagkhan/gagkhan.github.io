@@ -1,6 +1,6 @@
 <div class="link-badges" aria-label="Publication resources">
-  {% assign resource_keys = 'arxiv,paper,video,code,poster,slides,website' | split: ',' %}
-  {% assign resource_labels = 'arXiv,Paper,Video,Code,Poster,Slides,Project page' | split: ',' %}
+  {% assign resource_keys = 'arxiv,paper,blog,video,code,poster,slides,website' | split: ',' %}
+  {% assign resource_labels = 'arXiv,Paper,Blog,Video,Code,Poster,Slides,Project page' | split: ',' %}
   {% for key in resource_keys %}
     {% if include.post[key] %}
       {% assign resource_url = include.post[key] %}
