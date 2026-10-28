@@ -12,3 +12,5 @@ tn/
 favicon.ico
 .jekyll-cache
 .vscode
+
+.envrc
