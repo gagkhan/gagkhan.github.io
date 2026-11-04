@@ -43,7 +43,7 @@ An efficient learned world model makes a different route worth revisiting: **ada
 
 With the representation chosen, the question is how much useful dynamics correction we can obtain from a small real-data budget, and how broadly that correction applies.
 
-![Proposed adaptation architecture: real transitions fit the world model; imagined rollouts train the policy through a fixed reward interface. The reuse test is whether skill A data improves skill B.]({{ site.baseurl }}/images/blog/supermimic/adaptation-architecture.svg)
+![Proposed adaptation architecture: real transitions fit the world model; imagined rollouts train the policy through a fixed reward interface.]({{ site.baseurl }}/images/blog/supermimic/adaptation-architecture.svg)
 
 *Solid arrows show the data and deployment paths; the dashed arrow shows the policy-gradient path. The world model is adapted between policy-optimization phases.*
 
