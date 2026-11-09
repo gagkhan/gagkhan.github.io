@@ -16,7 +16,7 @@ Massively parallel simulation has changed what reinforcement learning can do for
 
 The moment the policy has to look at the world through a camera, the economics change. Every environment step now needs a rendered image and a forward pass through a visual network. Physics stays cheap; seeing gets expensive, and it gets more expensive as the vision model grows.
 
-Echo is my attempt at a simple question: **can we scale off-policy experience for visual RL without proportionally scaling rendering and visual-policy inference?**
+[Echo](https://arxiv.org/abs/2610.37865) is my attempt at a simple question: **can we scale off-policy experience for visual RL without proportionally scaling rendering and visual-policy inference?**
 
 ## The usual workaround, and its cost
 
@@ -109,15 +109,17 @@ None of these are tested yet. But they're the experiments I most want to run nex
 
 ## Citation
 
-The paper will be on arXiv soon; I'll link it here when it is. In the meantime, if you find this work useful, please cite:
+The paper is on [arXiv](https://arxiv.org/abs/2610.37865). If you find this work useful, please cite:
 
 ```bibtex
-@misc{khandate2026echo,
-  title  = {Echo: Scaling Visual Reinforcement Learning with Off-Policy Experience},
-  author = {Khandate, Gagan},
-  year   = {2026},
-  note   = {arXiv preprint, forthcoming}
+@article{khandate2026echo,
+  title         = {Echo: Scaling Visual Reinforcement Learning with Off-policy Experience},
+  author        = {Khandate, Gagan},
+  journal       = {arXiv preprint arXiv:2610.37865},
+  year          = {2026},
+  eprint        = {2610.37865},
+  archivePrefix = {arXiv},
+  primaryClass  = {cs.RO},
+  url           = {https://arxiv.org/abs/2610.37865}
 }
 ```
-
-<!-- TODO: once on arXiv, switch to @article with journal = {arXiv preprint arXiv:XXXX.XXXXX}, add eprint/url, and link the paper in the intro. -->
